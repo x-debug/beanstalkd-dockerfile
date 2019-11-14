@@ -15,5 +15,5 @@ RUN mkdir -p /opt/data
 
 EXPOSE 11300
 
-RUN beanstalkd -l 127.0.0.1 -p 11300 -b /opt/data &
+CMD ["/usr/bin/beanstalkd"]
 
